@@ -21,6 +21,20 @@ function validarNome(){
     }
 }
 
+function validarEmail() {
+  let txtEmail = document.querySelector("#txtEmail");
+
+  if (email.value.indexOf("@") === -1 || email.value.indexOf(".") === -1) {
+    txtEmail.innerHTML = "E-mail inválido";
+    txtEmail.style.color = "red";
+    emailOk = false;
+  } else {
+    txtEmail.innerHTML = "✔";
+    txtEmail.style.color = "green";
+    emailOk = true;
+  }
+}
+
 function validarEmailRegEx(){
     let regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/
     let txtEmail = document.querySelector("#txtEmail")
