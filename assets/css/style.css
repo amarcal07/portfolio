@@ -64,7 +64,7 @@ nav{
     background-color: var(--background-nav);
     display: flex;
     justify-content: space-between;
-    font-size: 1rem; /*fonte do texto (sobre mim)*/
+    font-size: 1.5rem; /*fonte do texto (sobre mim)*/
     padding: 2.25rem 1.5rem;/*espaçamento entre o texto e a caixa (menu)*/
     box-shadow: 2px 2px 5px var(--sombra);
     border-radius: 16px;
@@ -85,8 +85,8 @@ nav{
 
 .titulo{
     font-family: 'lato', cursive;
-    color: white;
-    font-size: 1.5rem;
+    color: black;
+    font-size: 1.8rem;
     letter-spacing: 3px ;
     font-weight: 800;
     padding-left: 2rem;
@@ -102,7 +102,7 @@ ul{
 }
 
 nav a{
-    color: white;
+    color: black;
 }
 
 main{
@@ -117,6 +117,9 @@ main{
     background-color: #e8d9ea;
     border-radius: 16px;  /*arredondar bordas da caixa (sobre mim)*/
     gap: 20px; /*espaço entre o texto e a imagem (sobre mim)*/
+    font-family: 'lato', cursive;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 
@@ -150,7 +153,7 @@ footer{
 
 .icons{
     
-    width: 3rem;
+    width: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }

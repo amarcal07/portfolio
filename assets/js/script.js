@@ -11,7 +11,7 @@ function validarNome(){
 
     if(nome.value.length < 3){
         txtNome.innerHTML = "Nome muito curto"
-        txtNome.style.color = "red"
+        txtNome.style.color = "black"
         nomeOk = false
     }
     else{
@@ -31,15 +31,28 @@ function validarEmailRegEx(){
         emailOk = true
     }else{
         txtEmail.innerHTML = "E-mail inválido"
-        txtEmail.style.color = "red"
+        txtEmail.style.color = "black"
         emailOk = false
     }
 } 
 
+function validarMensagem() {
+    let txtMensagem = document.querySelector("#txtMensagem");
+if (mensagem.value.length >= 100) {
+    txtMensagem.innerHTML = "Mensagem muito grande!";
+    txtMensagem.style.color = "black";
+    mensagemOk = false;
+  } else {
+    txtMensagem.innerHTML = "✔";
+    txtMensagem.style.color = "green";
+    mensagemOk = true;
+  }
+}
+
 //validar email e nome
 function enviarFormulario(){
     if(nomeOk === true && emailOk === true)
-         alert(nome.value  + ", Obrigada pela sua mensagem")
+         alert(nome.value  + ", Obrigada pela sua mensagem!")
     else{
         alert("Por favor, preencha o formulário corretamente!")
         }
@@ -47,12 +60,14 @@ function enviarFormulario(){
 
 function consultarCep(){
 
-    const url = `https://viacep.com.br/ws/${cep.value}/json/`
     //convertendo uma resposta pro formato JSON
+
+    console.log(cep.value)
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`
     fetch(url)
     .then((response) => response.json())
     .then((jsonBody) => {
-        document.getElementById("dados").innerHTML =
+        document.getElementById("endereco").innerHTML =
         jsonBody.logradouro +
         "\n" +
         jsonBody.bairro +
