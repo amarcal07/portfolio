@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/AndresaMarçal.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
+   
     <title>Portfólio Andresa Marçal</title>
 </head>
 
@@ -37,13 +38,13 @@
                 <h3>Contato</h3>
                 <div class="campos-form">
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Insira o seu nome completo">
-                    <div id="txtNome"></div>
+                    <input onkeyup="validarNome()" id="nome" type="text" placeholder="Insira o seu nome completo">
+                    <div id="txtNome"> Um texto qualquer</div>
                 </div>
 
                 <div class="campos-form">
                     <label for="email">Email:</label>
-                    <input id="email" type="text" placeholder="Insira o seu e-mail">
+                    <input onkeyup="validarEmailRegEx()" id="email" type="text" placeholder="Insira o seu e-mail">
                     <div id="txtEmail"></div>
                 </div> 
 
@@ -53,7 +54,7 @@
                     <div id="txtMensagem"></div>
                 </div>
 
-                <button type="button">
+                <button onclick="enviarFormulario()" type="button">
                     Enviar
                 </button>
         </form>
@@ -68,7 +69,7 @@
                 <div id="txtCep"></div>
             </div>
             <div class="campos-form">
-            <button type="button">
+            <button onclick="consultarCep()" type="button">
                 Consultar
             </button>
             <hr size="4" width="20%" align="left" color="black">
@@ -99,6 +100,6 @@
         </div>
         <p class="by">Desenvolvido por: Andresa Marçal - 2023 &copy;</p>
     </footer>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
