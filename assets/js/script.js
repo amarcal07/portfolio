@@ -48,7 +48,6 @@ function enviarFormulario(){
 function consultarCep(){
 
     const url = `https://viacep.com.br/ws/${cep.value}/json/`
-
     //convertendo uma resposta pro formato JSON
     fetch(url)
     .then((response) => response.json())
