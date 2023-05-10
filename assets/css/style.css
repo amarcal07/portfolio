@@ -58,21 +58,22 @@ body{
     background-color: var(--background-body); /*altera cor de fundo*/
 }
 
+
 nav{
     margin: 0 auto;
-    width: 80vw; /*altera o tamanho de visualização*/
+    width: 80vw; 
     background-color: var(--background-nav);
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem; /*fonte do texto (sobre mim)*/
-    padding: 2.25rem 1.5rem;/*espaçamento entre o texto e a caixa (menu)*/
+    font-size: 1.5rem; 
+    padding: 2.25rem 1.5rem;
     box-shadow: 2px 2px 5px var(--sombra);
     border-radius: 16px;
 }
-
+   
 .logo{
     display: flex;
-    width: 20%; /*tamanho logo*/
+    width: 50%; /*tamanho logo*/
     justify-content: left;
     position: relative;
     align-items: center;
@@ -224,3 +225,4 @@ textarea::placeholder{
 .campos-form {
     padding-bottom: 1rem;
 }
+
