@@ -173,12 +173,12 @@ footer{
     padding: 40px;
 }
 
-.endereco{
+/*.endereco{
     font-family: 'lato' Roboto;
     color: gray;
     font-size: 1rem;
 
-}
+}*/
 
 .formulario{
     width: 50%;
@@ -226,3 +226,63 @@ textarea::placeholder{
     padding-bottom: 1rem;
 }
 
+/*responsividade*/
+
+@media(max-width: 1000px){
+
+    nav{
+        width: 100vw;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        width: 100vw;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    main{   
+        width: 95vw;
+    }
+
+    #sobre {
+        flex-direction: column-reverse;
+    }
+
+    .foto {
+        margin-top: 1rem;
+    }
+
+    #meu_video {
+        width: 95vw;
+    }
+
+    .video {
+        width: 95vw;
+    }
+
+    footer{
+        width: 100vw;
+    }
+
+    .by {
+        font-size: 1rem;
+    }
+
+    #contato {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    #formulario_mensagem,
+    #formulario_buscacep {
+        width: 85vw;
+        margin: 0 auto;
+    }
+}
