@@ -73,7 +73,7 @@ nav{
    
 .logo{
     display: flex;
-    width: 50%; /*tamanho logo*/
+    width: 50%; /*tamanho logo (nome)*/
     justify-content: left;
     position: relative;
     align-items: center;
@@ -85,7 +85,7 @@ nav{
 }
 
 .titulo{
-    font-family: 'lato', cursive;
+    font-family:'lato', cursive;
     color: black;
     font-size: 1.8rem;
     letter-spacing: 3px ;
@@ -130,13 +130,13 @@ main{
     box-shadow: 2px 2px 5px var(--sombra);
 }
 
-#videoyt{
+/* #videoyt{
     display: flex;
     margin: 0 auto;
     width: 60%;
     gap: 2rem;
     border-radius: 8px;
-}
+} */
 
 footer{
     margin: 0 auto;
