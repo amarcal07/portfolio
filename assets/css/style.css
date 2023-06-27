@@ -130,13 +130,18 @@ main{
     box-shadow: 2px 2px 5px var(--sombra);
 }
 
-/* #videoyt{
-    display: flex;
+#meu_video {
+    margin-bottom: 2rem;
+}
+
+.video {
+    width: 60vw;
+    aspect-ratio: 16/9;
     margin: 0 auto;
-    width: 60%;
-    gap: 2rem;
+    display: block;
     border-radius: 8px;
-} */
+    margin-top: 2rem;
+}
 
 footer{
     margin: 0 auto;
