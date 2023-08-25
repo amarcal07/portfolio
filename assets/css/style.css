@@ -81,7 +81,9 @@ nav{
 
 .icone{
     width: 5rem;
-    padding-left: 1rem;  
+    padding-left: 0.5rem;
+    border-radius: 48%;
+      
 }
 
 .titulo{
