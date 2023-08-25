@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
+    <link rel="icon" type="image/png" href="assets/images/Andresa Marçal.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfólio</title>
 </head>
 
 <body>
     <!-- Menu da Página -->
     <nav>
-        <!-- Logo + Texto à esquerda do Menu-->        
-        <img src="assets/images/goku_ico.png" alt="Logo da página - Goku">
-        <span>Portifólio</span>
+        <!-- Logo + Texto à esquerda do Menu-->      
+        <div class="logo">
+        <img class="icone"src="assets/images/Andresa Marçal.jpg" alt="Logo da página - Andresa">
+        <span class="titulo">Portifólio Andresa Marçal</span>
     </div>
     <!-- Opções do Menu utilizando Marcadores não ordenados (simbólico) -->
         <ul>
@@ -25,74 +27,78 @@
             <a href="contato.html">
                 <li>Contato</li>
             </a>
-         </ul>
-    <nav>
+        </ul>
+    </nav>
 
   <!-- Conteúdo da Página-->
-</main>
+<main class="contato">
+    <section class="formulario">
         <form>
-                <h2>Contato</h2>
-                <div>
+                <h3>Contato</h3>
+                <div class="campos-form">
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Insira o seu nome completo">
+                    <input onkeyup="validarNome()" id="nome" type="text" placeholder="Insira o seu nome completo">
                     <div id="txtNome"></div>
                 </div>
 
-                <div>
+                <div class="campos-form">
                     <label for="email">Email:</label>
-                    <input id="email" type="text" placeholder="Insira o seu e-mail">
+                    <input onkeyup="validarEmailRegEx()" id="email" type="text" placeholder="Insira o seu e-mail">
                     <div id="txtEmail"></div>
                 </div> 
 
-                <div>
+                <div class="campos-form">
                     <label for="mensagem">Mensagem:</label>
-                    <input id="mensagem" type="text" rows="8" placeholder="Insira a sua mensagem.."></textarea>
+                    <textarea onkeyup="validarMensagem()"id="mensagem" type="text" rows="8" placeholder="Insira a sua mensagem.."></textarea>
                     <div id="txtMensagem"></div>
                 </div>
 
-                <button type="button">
+                <button onclick="enviarFormulario()" type="button">
                     Enviar
                 </button>
         </form>
-
-        <form>
-            <h2>Consultar CEP</h2>
-            <div>
+    </section>
+    
+    <section>
+         <!-- <h3>Consultar CEP</h3>
+            <div class="endereco">
+                <div class="campos-form">
                 <label for="cep">CEP:</label>
-                <input id="cep" type="text" placeholder="Digite o seu CEP">
+                <input id="cep" name="cep" type="text" placeholder="Digite o seu CEP">
                 <div id="txtCep"></div>
             </div>
-            <button type="button">
+            <div class="campos-form">
+            <button onclick="consultarCep()" type="button">
                 Consultar
             </button>
-            <hr size="4" width="20%" align="left" color="black">
-
-            <div>
-                <label for="endereco">Endereço:</label>
-                <input id="endereco" type="text" rows="8" placeholder="Busca CEP..."></textarea>
-                <div id="txtEndereco"></div>
+            <hr size="4" width="90%" align="left" color="black">
             </div>
-    </form>
+            <div class="campos-form">
+                <label for="endereco">Endereço:</label>
+                <textarea id="endereco" name="endereco" type="text" rows="8" placeholder="Busca CEP..."></textarea>
+                <div id="txtEndereco"></div> 
+            </div>
+        </div>  -->
+    </section> 
 </main>
 
     <!-- Rodapé da Página -->
     <footer>
-        <div>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="assets/images/linkedin.png" alt="Linkedin">
+        <div class="redes_sociais">
+            <a href="https://www.linkedin.com/in/andresa-mar%C3%A7al/" target="_blank">
+                <img class="icons" src="assets/images/linkedin.png" alt="Linkedin">
             </a>
 
-            <a href="http://github.com" target="_blank">
-                <img src="assets/images/github.png" alt="Github">
+            <a href="https://github.com/amarcal07" target="_blank">
+                <img class="icons" src="assets/images/github.png" alt="Github">
             </a>
 
-            <a href="http://instagram.com" target="_blank">
-                <img src="assets/images/instagram.png" alt="Instagram">
+            <a href="https://instagram.com/andresa_marcal?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                <img class="icons" src="assets/images/instagram.png" alt="Instagram">
             </a>
         </div>
-        <p>Desenvolvido por: Andresa Marçal - 2023 &copy;</p>
+        <p class="by">Desenvolvido por: Andresa Marçal - 2023 &copy;</p>
     </footer>
-
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
